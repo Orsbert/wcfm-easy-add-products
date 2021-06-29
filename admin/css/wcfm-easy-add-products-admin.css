@@ -2,3 +2,23 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+
+.amp_table{
+	padding: 8px;
+	border: 1px solid gray;
+	background-color: white;
+	text-align: left;
+}
+
+.amp_table thead{
+	font-weight: bold;
+	font-size: large;
+}
+
+.amp_table tbody{
+	border-top: 1px solid gray;
+}
+
+.amp_table td{
+	padding: 5px 2px;
+}

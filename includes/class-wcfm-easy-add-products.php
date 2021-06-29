@@ -157,6 +157,10 @@ class Wcfm_Easy_Add_Products {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'amp_menu_option' );
+		// $this->loader->add_action( 'wp_head', $plugin_admin, 'amp_update_options' );
+		$this->loader->add_action( 'admin_post_nopriv_amp_add_variable_form', $plugin_admin, 'amp_update_options' );
+		$this->loader->add_action( 'admin_post_amp_add_variable_form', $plugin_admin, 'amp_update_options' );
 	}
 
 	/**
