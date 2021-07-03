@@ -52,6 +52,9 @@ class Wcfm_Easy_Add_Products_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 
+		// register shortcode
+		add_shortcode( 'amp_make_pretty', ['Wcfm_Easy_Add_Products_Public', 'amp_make_pretty_shortcode'] );
+
 	}
 
 	/**
@@ -98,6 +101,14 @@ class Wcfm_Easy_Add_Products_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wcfm-easy-add-products-public.js', array( 'jquery' ), $this->version, false );
 
+	}
+
+	public function amp_make_pretty_shortcode(){
+		return "
+		<div id='amp_root' class='wrap'>
+        	<h3>Select Categories</h3>
+		</div>
+		";
 	}
 
 }
