@@ -6,6 +6,23 @@
   $(function () {
 
     /**
+     * hide "unnecessary" areas
+     */
+
+    $('.wcfm_product_manager_content_fields, .product_tags, #product_tags, .wcfm_side_tag_cloud, #is_catalog, #is_catalog + p')
+      .addClass('amp-hide')
+    
+    // change product type
+    $('#product_type').val('variable')
+
+
+    /**
+     * Making things beutiful
+     */
+
+    $('.wcfm_product_manager_gallery_fields').css('width', '100%')
+
+    /**
      * 
      * C A T E G O R I E S
      * 

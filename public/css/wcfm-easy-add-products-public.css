@@ -2,3 +2,9 @@
  * All of the CSS for your public-facing functionality should be
  * included in this file.
  */
+
+ .amp-hide, .product_tags_ele{
+	display: none !important;
+	visibility: hidden !important;
+ }
+ 
